@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATIONS</title>
+    <link rel="stylesheet" href="calculate.css">
+    <script language="javascript" src="calci.js"></script>
+</head>
+<body >
+   <center><h2>Scientific Calculator</h2></center><br><br>
+   <ul><li>To perform any of the operation(i.e coloured) first select the value and then that particular operation.</li></ul><br><br><br><br><br>
+   <center><div class="calculator">
+       <center><form name="sci">
+    <input type="screen" style="width: 300px;height: 50px;" class="display" name="display" value="0" size="30" maxlength="25"><br><br><br>
+    <input type="button" class="btnTop" value="AC" onclick="sci.display.value=0 ">
+    <input type="button" class="btnTop" value="⌫" onclick="deleteChar(sci.display)">
+    <input type="button"class="btnTop" value="=" onclick="if(checkNum(sci.display.value)) { compute(this.form) }">
+    <input type="button" class="btnMath" value="÷" onclick="addChar(this.form.display, '/')"><br>
+    <input type="button" class="btnNum" value="7" onclick="sci.display.value+= '7'" >
+    <input type="button" class="btnNum" value="8" onclick="sci.display.value+= '8'" > 
+    <input type="button" class="btnNum" value="9" onclick="sci.display.value+= '9'" >
+    <input type="button" class="btnMath" value="+" onclick="addChar(this.form.display, '+')"><br>
+    <input type="button" class="btnNum" value="4" onclick="sci.display.value+= '4'" >
+    <input type="button" class="btnNum" value="5" onclick="sci.display.value+= '5'" >
+    <input type="button" class="btnNum" value="6" onclick="sci.display.value+= '6'" >
+    <input type="button" class="btnMath" value="−" onclick="addChar(this.form.display, '-')"><br>
+    <input type="button" class="btnNum" value="1" onclick="sci.display.value+= '1'" >
+    <input type="button" class="btnNum" value="2" onclick="sci.display.value+= '2'" >
+    <input type="button" class="btnNum" value="3" onclick="sci.display.value+= '3'" >
+    <input type="button" class="btnMath" value="×" onclick="addChar(this.form.display, '*')"><br>
+    <input type="button" class="btnNum" value="0" onclick="sci.display.value+= '0'" >
+    <input type="button" class="btnMath" name="btnMath" value="(" onclick="addChar(this.form.display, '(')">
+    <input type="button" class="btnMath" name="btnMath" value=")" onclick="addChar(this.form.display, ')')">
+    <input type="button" class="btnMath" value="mod" onclick="addChar(this.form.display, '%')"><br>
+    <input type="button" value="ln" class="btnOpps" name="btnOpps" onclick="if(checkNum(this.form.display.value)) { ln(this.form) }">
+    <input type="button" value="^" class="btnOpps" name="btnOpps"  onclick="sci.display.value=Math.pow(sci.display.value,sci.display.value)">
+    <input type="button" value="&radic;" class="btnOpps" name="btnOpps" onclick="sci.display.value=Math.sqrt(sci.display.value)">
+    <input type="button"  value="&#960;" class="btnOpps" name="btnOpps" onclick="addChar(sci.display,Math.PI)"><br>
+    <input type="button" class="btnMath2" value="e" onclick="addChar(sci.display,Math.E)" >
+    <input type="button" class="btnMath2" value="log" onclick="sci.display.value=Math.log10(sci.display.value)" >
+    <input type="button" class="btnMath2" value="x²" onclick="sci.display.value=Math.pow(sci.display.value,2)">
+    <input type="button" class="btnMath2" value="exp" onclick="sci.display.value=Math.exp(sci.display.value)"><br>
+    <input type="button" value="sin" class="btnMath1" name="btnMath" onclick="sci.display.value=Math.sin(sci.display.value)">
+    <input type="button" value="cos" class="btnMath1" name="btnMath" onclick="sci.display.value=Math.cos(sci.display.value)">
+    <input type="button" value="tan" class="btnMath1" name="btnMath" onclick="sci.display.value=Math.tan(sci.display.value)">
+    <input type="button"  value="."&nbsp; class="btnMath1" name="btnMath" onclick="addChar(this.form.display, '.')"><br>
+    <input type="button" value="sin-1 " class="btnMath3" name="btnMath" onclick="sci.display.value=Math.asin(sci.display.value)">
+    <input type="button" value="cos−1 " class="btnMath3" name="btnMath" onclick="sci.display.value=Math.acos(sci.display.value)">
+    <input type="button" value="tan−1" class="btnMath3" name="btnMath" onclick="sci.display.value=Math.atan(sci.display.value)">
+    <input type="button"  value="|x|" class="btnMath3" name="btnMath" onclick="sci.display.value=Math.abs(sci.display.value)"><br>
+   <br></form></center?<br><br><br><br><br><br><br><br>
+   <p>*******************************************************************************</p>
+   
+</div></center>
+</body>
+</html>
